@@ -61,7 +61,7 @@ class Animal:
         import zooAnimales.reptil
         import zooAnimales.anfibio
         import zooAnimales.pez
-        
+
         return f"""
             Mamiferos : {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}
             Aves : {zooAnimales.ave.Ave.cantidadAves()}
@@ -73,8 +73,8 @@ class Animal:
     def __str__(self):
         if self._zona is None:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi " \
-                   f"genero es {self._genero} "
+                   f"genero es {self._genero}"
         else:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi " \
                    f"genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}," \
-                   f" en el {self._zona.getZoo().getNombre()} "
+                   f" en el {self._zona.getZoo().getNombre()}"
