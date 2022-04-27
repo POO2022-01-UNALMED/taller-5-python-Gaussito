@@ -1,7 +1,7 @@
-import animal
+from zooAnimales.animal import Animal
 
 
-class Ave(animal):
+class Ave(Animal):
 
     _listado = []
     halcones = 0
